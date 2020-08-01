@@ -1,0 +1,18 @@
+CREATE TABLE `teacher` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键id',
+	`name` varchar(10) NOT NULL DEFAULT '' COMMENT '姓名',
+  `sex` varchar(10) NOT NULL DEFAULT '' COMMENT '性别',
+  `age` INT  COMMENT '年龄',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='老师表';
+
+
+CREATE TABLE `student` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键id',
+	`name` varchar(10) NOT NULL DEFAULT '' COMMENT '姓名',
+  `sex` varchar(10) NOT NULL DEFAULT '' COMMENT '性别',
+  `age` INT  COMMENT '年龄',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='学生表';
+
+
